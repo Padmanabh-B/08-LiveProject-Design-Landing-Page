@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto;
+  /* overflow: hidden; */
+}
+
+.main-div {
+  position: relative;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px 0;
+}
+
+nav .fa {
+  visibility: hidden;
+}
+
+nav img {
+  height: 42px;
+}
+
+.nav-items {
+  display: flex;
+}
+
+nav .nav-item {
+  font-size: 14px;
+  padding: 10px 26px;
+  color: #252d7a;
+}
+
+.signin-btn,
+.learn-more-btn {
+  padding: 5px 20px;
+  background: linear-gradient(to right, #965cf2 0%, #ff8adc 100%);
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+}
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 82%;
+}
+
+.left-section {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-section h1 {
+  font-size: 90px;
+  padding: 30px 0px;
+  font-weight: 800;
+  color: #3e4794;
+}
+
+.left-section h4 {
+  width: 70%;
+  padding: 30px 0;
+  line-height: 1.8;
+  font-size: 17px;
+  margin-bottom: 90px;
+}
+
+.learn-more-btn {
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.signin-btn {
+  font-weight: 600;
+  padding: 5px 20px;
+}
+
+.imgs-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+img[alt="intro-img"] {
+  position: absolute;
+  width: 45%;
+  left: 40rem;
+  top: 80px;
+  z-index: 10;
+}
+
+img[alt="back-cover"] {
+  position: absolute;
+  right: 0;
+  bottom: 6%;
+}
+
+.vector-img,
+.vector-dot {
+  position: absolute;
+  top: 500px;
+  right: 45rem;
+}
+
+.vector-dot {
+  position: absolute;
+  right: 46rem;
+  top: 507px;
+}
+
+@media only screen and (max-width: 996px) {
+  nav .fa {
+    visibility: visible;
+  }
+
+  .imgs-div img[alt="back-cover"] {
+    display: none;
+  }
+  .nav-items,
+  .signin-btn {
+    display: none;
+  }
+  img[alt="logo"] {
+    position: relative;
+    right: 30%;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  img[alt="logo"] {
+    position: relative;
+    right: 10%;
+  }
+  nav .fa {
+    visibility: visible;
+  }
+  .imgs-div img[alt="back-cover"] {
+    display: none;
+  }
+  .left-section {
+    position: absolute;
+    top: 40%;
+    width: 0%;
+  }
+  .imgs-div {
+    position: absolute;
+    left: -550px;
+    top:50%;
+    width: 120%;
+  }
+ 
+  
+}
