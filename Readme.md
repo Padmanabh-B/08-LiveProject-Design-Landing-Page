@@ -35,3 +35,4 @@ This Project is a mobile responsive for laptop screen and mobile screen
 
 
 ## Deployed Link
+[Design Landing Page](https://disign-ui-page.netlify.app/)
